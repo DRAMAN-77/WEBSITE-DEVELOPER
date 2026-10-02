@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WebNest Studio | Web Design & Development</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #17212b;
+      background: #f7f9fc;
+      line-height: 1.6;
+    }
+    <script src="script.js" defer></script>
+
+    header, main, <footer>
+  <p class="muted">© <span id="year"></span> WebNest Studio</p>
+</footer> {
+      width: min(100% - 40px, 1050px);
+      margin: auto;
+    }
+
+    header {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo { font-size: 1.25rem; font-weight: bold; }
+
+    nav a {
+      margin-left: 20px;
+      color: #17212b;
+      text-decoration: none;
+    }
+
+    .hero { padding: 85px 0; }
+
+    .hero h1 {
+      max-width: 720px;
+      margin: 0 0 16px;
+      font-size: clamp(2.4rem, 6vw, 4.5rem);
+      line-height: 1.08;
+    }
+
+    .hero p { max-width: 580px; color: #526170; font-size: 1.15rem; }
+
+    .button {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 12px 18px;
+      border-radius: 6px;
+      background: #2457d6;
+      color: white;
+      text-decoration: none;
+    }
+
+    section { padding: 42px 0; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; }
+
+    .card {
+      padding: 22px;
+      border: 1px solid #e1e6ed;
+      border-radius: 10px;
+      background: white;
+    }
+
+    .muted { color: #526170; }
+    footer { padding: 30px 0; border-top: 1px solid #e1e6ed; }
+
+    @media (max-width: 600px) {
+      header { align-items: flex-start; flex-direction: column; padding: 18px 0; }
+      nav a { margin: 0 16px 0 0; }
+      .hero { padding: 55px 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">WebNest Studio</div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#work">My work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p>WEB DESIGN & DEVELOPMENT</p>
+      <h1>Websites that help small businesses get noticed.</h1>
+      <p>I’m learning and building clean, useful websites for people and businesses.
+         Explore my work or get in touch about a project.</p>
+      <a class="button" href="#contact">Contact me</a>
+    </section>
+
+    <section id="services">
+      <h2>What I can help with</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Website design</h3>
+          <p class="muted">Simple, clear layouts that work on phones and computers.</p>
+        </article>
+        <article class="card">
+          <h3>Website development</h3>
+          <p class="muted">Building pages with HTML, CSS, and JavaScript.</p>
+        </article>
+        <article class="card">
+          <h3>Website updates</h3>
+          <p class="muted">Help improving content, layout, and existing pages.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="work">
+      <h2>My work</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Fashion Store Demo</h3>
+          <p class="muted">A practice storefront concept for a fashion business.</p>
+        </article>
+        <article class="card">
+          <h3>More projects coming soon</h3>
+          <p class="muted">I’ll add finished projects here as I build them.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About me</h2>
+      <p class="muted">I’m a website designer and developer building my skills and helping
+        businesses create a clear online presence. Add a few personal details here.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Let’s talk about your website</h2>
+      <p class="muted">Email me to discuss a project or ask a question.</p>
+      <a class="button" href="mailto:your-email@example.com">Send me an email</a>
+    </section>
+  </main>
+
+  <footer>
+    <p class="muted">© 2026 WebNest Studio</p>
+  </footer>
+</body>
+</html>
